@@ -1,3 +1,80 @@
+.client-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.client-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.client-item {
+  height: 90px;
+
+  @media screen and (max-width: 767px) {
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 150px) / 6);
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.client-link {
+  @extend %flex-center;
+
+  height: 100%;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  color: $main-icons-color;
+
+  transition: border-color 250ms $time-function, color 250ms $time-function;
+
+  &:hover,
+  &:focus {
+    border-color: $accent-text-color;
+    color: $accent-text-color;
+  }
+}
+
+.client-icon {
+  fill: currentColor;
+}
+
 // .client-section {
 //   @extend %section-padding;
 // }
