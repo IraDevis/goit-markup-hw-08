@@ -1,39 +1,87 @@
-.work-section {
-  padding-bottom: 94px;
-}
-
-.work-list {
-  display: flex;
-}
-
-.work-item {
-  position: relative;
-  z-index: 0;
-  width: calc((100% - 60px) / 3);
-
-  &:not(:last-child) {
-    margin-right: 30px;
+@media screen and (max-width: 1199px) {
+  .work-section {
+    display: none;
   }
 }
 
-.work-description {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+@media screen and (min-width: $desktop) {
+  .work-section {
+    padding-bottom: 94px;
+  }
 
-  display: block;
+  .work-list {
+    display: flex;
+  }
 
-  width: 100%;
-  height: 70px;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 27px;
-  padding-bottom: 27px;
+  .work-item {
+    position: relative;
+    z-index: 0;
+    width: calc((100% - 60px) / 3);
 
-  @include font-style($weight: 700, $height: 1.14);
-  text-align: center;
-  text-transform: uppercase;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 
-  color: $title-text-color;
-  background-color: rgba(47, 48, 58, 0.8);
+  .work-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 70px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+
+    @include font-style($weight: 700, $height: 1.14);
+    text-align: center;
+    text-transform: uppercase;
+
+    color: $title-text-color;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
 }
+
+// .work-section {
+//   padding-bottom: 94px;
+// }
+
+// .work-list {
+//   display: flex;
+// }
+
+// .work-item {
+//   position: relative;
+//   z-index: 0;
+//   width: calc((100% - 60px) / 3);
+
+//   &:not(:last-child) {
+//     margin-right: 30px;
+//   }
+// }
+
+// .work-description {
+//   position: absolute;
+//   bottom: 0;
+//   left: 0;
+
+//   display: block;
+
+//   width: 100%;
+//   height: 70px;
+//   margin-top: 0;
+//   margin-bottom: 0;
+//   padding-top: 27px;
+//   padding-bottom: 27px;
+
+//   @include font-style($weight: 700, $height: 1.14);
+//   text-align: center;
+//   text-transform: uppercase;
+
+//   color: $title-text-color;
+//   background-color: rgba(47, 48, 58, 0.8);
+// }
