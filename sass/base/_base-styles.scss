@@ -68,12 +68,14 @@ img {
   margin-top: 0;
   margin-bottom: 30px;
 
-  @include font-style(700, 36px);
+  @include font-style(700, 28px);
   text-align: center;
 
   color: $secondary-text-color;
 
   @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
+    @include font-style(700, 36px);
+    text-align: center;
   }
 }
