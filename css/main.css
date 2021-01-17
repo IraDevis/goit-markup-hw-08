@@ -528,7 +528,21 @@ footer {
   margin-bottom: 17px;
 }
 
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .subscribe-input {
+  margin-bottom: 20px;
   width: 100%;
   max-width: 450px;
   height: 50px;
