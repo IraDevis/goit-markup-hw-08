@@ -1,40 +1,54 @@
-// .hero {
-//   height: 600px;
-//   padding-top: 200px;
-//   padding-bottom: 280px;
+.hero {
+  height: 400px;
+  max-width: 1600px;
+  padding-top: 200px;
+  padding-bottom: 280px;
+  margin-right: auto;
+  margin-left: auto;
 
-//   text-align: center;
+  text-align: center;
 
-//   background-color: $accent-bg-color;
-//   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img.jpg);
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: cover;
-// }
+  background-color: $accent-bg-color;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
-// .hero-title {
-//   margin-top: 0;
-//   margin-bottom: 30px;
-//   margin-left: auto;
-//   margin-right: auto;
-//   width: 696px;
+  @media screen and (min-width: $desktop) {
+    height: 600px;
+  }
+}
 
-//   @include font-style(900, 44px, 1.36, 0.06em);
-//   text-transform: uppercase;
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 360px;
 
-//   color: $title-text-color;
-// }
+  @include font-style(900, 26px, 1.6, 0.06em);
+  text-transform: uppercase;
 
-// .hero-button {
-//   display: inline-block;
+  color: $title-text-color;
 
-//   min-width: 200px;
-//   min-height: 50px;
-//   padding: 10px 32px;
-//   outline: transparent;
+  @media screen and (min-width: $desktop) {
+    @include font-style(900, 44px, 1.36, 0.06em);
+    text-transform: uppercase;
 
-//   @include font-style(700, 16px, 1.88, 0.06em);
+    width: 696px;
+  }
+}
 
-//   color: $title-text-color;
-//   background-color: $accent-text-color;
-// }
+.hero-button {
+  display: inline-block;
+
+  min-width: 200px;
+  min-height: 50px;
+  padding: 10px 32px;
+  outline: transparent;
+
+  @include font-style(700, 16px, 1.88, 0.06em);
+
+  color: $title-text-color;
+  background-color: $accent-text-color;
+}

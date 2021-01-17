@@ -1,188 +1,216 @@
-// .backdrop {
-//   position: fixed;
-//   z-index: 1;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   background-color: rgba(0, 0, 0, 0.2);
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 93px 15px;
+  background-color: rgba(0, 0, 0, 0.2);
+  overflow-y: scroll;
+}
 
-//   opacity: 1;
-//   transition: opacity 250ms $time-function;
-// }
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
 
-// .backdrop.is-hidden {
-//   opacity: 0;
-//   pointer-events: none;
-// }
+.backdrop.is-hidden .modal {
+  @media screen and (min-width: $tablet) {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+}
 
-// .backdrop.is-hidden .modal {
-//   transform: translate(-50%, -50%) scale(1.1);
-// }
+.modal {
+  @extend %flex-center;
+  flex-direction: column;
+  width: 100%;
+  height: 609px;
+  border-radius: 4px;
 
-// .modal {
-//   position: absolute;
-//   top: 50%;
-//   left: 50%;
-//   transform: translate(-50%, -50%) scale(1);
+  background-color: $main-bg-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-//   @extend %flex-center;
-//   flex-direction: column;
+  transition: transform 250ms $time-function;
 
-//   width: 528px;
-//   height: 581px;
-//   border-radius: 4px;
+  @media screen and (min-width: $mobile) {
+    width: 100%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
 
-//   background-color: $main-bg-color;
-//   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  @media screen and (min-width: $desktop) {
+    width: 100%;
+    max-width: 528px;
+    height: 581px;
+  }
+}
 
-//   transition: transform 250ms $time-function;
-// }
+// FORM STYLES
 
-// .close-button {
-//   position: absolute;
-//   @extend %flex-center;
-//   top: 8px;
-//   right: 8px;
+.close-button {
+  position: absolute;
+  @extend %flex-center;
+  //   top: 101px;
+  //   right: 23px;
+  top: 8px;
+  right: 8px;
 
-//   width: 30px;
-//   height: 30px;
+  //   @media screen and (min-width: $desktop) {
+  //     top: 8px;
+  //     right: 8px;
+  //   }
 
-//   border: 1px solid rgba(0, 0, 0, 0.1);
-//   border-radius: 50%;
+  width: 30px;
+  height: 30px;
 
-//   background-color: $main-bg-color;
-//   transition: color 250ms $time-function;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
 
-//   &:hover,
-//   &:focus {
-//     outline: transparent;
-//     color: $accent-text-color;
-//   }
-// }
+  background-color: $main-bg-color;
+  transition: color 250ms $time-function;
 
-// .close-icon {
-//   width: 18px;
-//   height: 18px;
-//   background-position: center;
-//   fill: currentColor;
-// }
+  &:hover,
+  &:focus {
+    outline: transparent;
+    color: $accent-text-color;
+  }
+}
 
-// .modal-form {
-//   @extend %flex-center;
-//   flex-direction: column;
-//   margin-left: 40px;
-//   margin-right: 40px;
-// }
+.close-icon {
+  width: 18px;
+  height: 18px;
+  background-position: center;
+  fill: currentColor;
+}
 
-// .callback {
-//   margin-top: 40px;
-//   margin-bottom: 12px;
+.modal-form {
+  @extend %flex-center;
+  flex-direction: column;
+  margin-left: 40px;
+  margin-right: 40px;
+}
 
-//   @include font-style(700, 20px, 1.15);
-//   text-align: center;
+.callback {
+  margin-top: 40px;
+  margin-bottom: 12px;
 
-//   color: $secondary-text-color;
-// }
+  @include font-style(700, 20px, 1.15);
+  text-align: center;
 
-// .modal-label {
-//   position: relative;
-//   margin-bottom: 10px;
+  color: $secondary-text-color;
+}
 
-//   @include font-style($size: 12px, $spacing: 0.01em);
-//   text-align: left;
+.modal-label {
+  position: relative;
+  margin-bottom: 10px;
 
-//   color: $main-text-color;
-// }
+  @include font-style($size: 12px, $spacing: 0.01em);
+  text-align: left;
 
-// .modal-input {
-//   width: 448px;
-//   height: 40px;
-//   margin-top: 4px;
-//   padding-left: 42px;
-//   border: 1px solid rgba(33, 33, 33, 0.2);
-//   border-radius: 4px;
+  color: $main-text-color;
+}
 
-//   transition: border-color 250ms $time-function, color 250ms $time-function;
+.modal-input {
+  width: 370px;
 
-//   &:focus {
-//     outline: transparent;
-//     border-color: $accent-text-color;
-//   }
+  @media screen and (min-width: $desktop) {
+    width: 448px;
+  }
 
-//   &:focus + .modal-icon {
-//     fill: $accent-text-color;
-//   }
-// }
+  height: 40px;
+  margin-top: 4px;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
 
-// .modal-icon {
-//   position: absolute;
-//   z-index: 3;
-//   left: 12px;
-//   bottom: 11px;
-//   width: 18px;
-//   height: 18px;
-//   fill: $secondary-text-color;
+  transition: border-color 250ms $time-function, color 250ms $time-function;
 
-//   transition: fill 250ms $time-function;
-// }
+  &:focus {
+    outline: transparent;
+    border-color: $accent-text-color;
+  }
 
-// .comment-label {
-//   margin-bottom: 20px;
-// }
+  &:focus + .modal-icon {
+    fill: $accent-text-color;
+  }
+}
 
-// .modal-input.comment {
-//   resize: none;
-//   height: 120px;
-//   padding: 12px 16px;
+.modal-icon {
+  position: absolute;
+  z-index: 3;
+  left: 12px;
+  bottom: 11px;
+  width: 18px;
+  height: 18px;
+  fill: $secondary-text-color;
 
-//   &::placeholder {
-//     @include font-style($height: 1.14, $spacing: 0.01em);
-//     color: rgba(117, 117, 117, 0.5);
-//   }
-// }
+  transition: fill 250ms $time-function;
+}
 
-// .checkbox-label {
-//   display: flex;
-//   align-items: center;
-//   margin-bottom: 30px;
+.comment-label {
+  margin-bottom: 20px;
+}
 
-//   @include font-style($height: 1.71);
-//   text-align: center;
+.modal-input.comment {
+  resize: none;
+  height: 120px;
+  padding: 12px 16px;
 
-//   color: $main-text-color;
+  &::placeholder {
+    @include font-style($height: 1.14, $spacing: 0.01em);
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
 
-//   & .checkbox-input:checked + .check-icon {
-//     background-color: $accent-text-color;
-//     background-origin: border-box;
-//     border: none;
-//   }
-// }
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
 
-// .check-icon {
-//   width: 16px;
-//   height: 15px;
-//   margin-right: 7px;
-//   border: 2px solid $secondary-text-color;
-//   border-radius: 2px;
+  @include font-style($size: 12px);
+  text-align: center;
 
-//   transition: background-color 250ms $time-function, border 250ms $time-function;
-// }
+  @media screen and (min-width: $desktop) {
+    @include font-style($height: 1.71);
+    text-align: center;
+  }
 
-// .contract-link {
-//   text-decoration: underline;
-//   color: $accent-text-color;
-// }
+  color: $main-text-color;
 
-// .send-button {
-//   width: 200px;
-//   height: 50px;
-//   margin-bottom: 40px;
-//   outline: transparent;
+  & .checkbox-input:checked + .check-icon {
+    background-color: $accent-text-color;
+    background-origin: border-box;
+    border: none;
+  }
+}
 
-//   @include font-style(700, 16px, 1.88, 0.06em);
+.check-icon {
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+  border: 2px solid $secondary-text-color;
+  border-radius: 2px;
 
-//   color: $title-text-color;
-//   background-color: $accent-text-color;
-//   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-// }
+  transition: background-color 250ms $time-function, border 250ms $time-function;
+}
+
+.contract-link {
+  text-decoration: underline;
+  color: $accent-text-color;
+}
+
+.send-button {
+  width: 200px;
+  height: 50px;
+  margin-bottom: 40px;
+  outline: transparent;
+
+  @include font-style(700, 16px, 1.88, 0.06em);
+
+  color: $title-text-color;
+  background-color: $accent-text-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
