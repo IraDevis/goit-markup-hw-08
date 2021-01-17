@@ -1,0 +1,112 @@
+// .team-list {
+//   @media screen and (min-width: $tablet) {
+//     display: flex;
+//     flex-wrap: wrap;
+//   }
+// }
+
+// .team-list .name {
+//   margin-top: 0;
+//   margin-bottom: 10px;
+
+//   @include font-style(500, 16px);
+//   text-align: center;
+
+//   color: $secondary-text-color;
+// }
+
+// .team-list .work-position {
+//   margin-top: 0;
+//   margin-bottom: 16px;
+
+//   @include font-style($size: 16px);
+//   text-align: center;
+// }
+
+// .team-item {
+//   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
+//   @media screen and (max-width: 767px) {
+//     width: 100%;
+
+//     &:not(:last-child) {
+//       margin-bottom: 30px;
+//     }
+//   }
+
+// @media screen and (min-width: $tablet) {
+//   width: calc((100% - 30px) / 2);
+//   margin-right: 30px;
+//   margin-bottom: 30px;
+
+//   &:nth-child(2n) {
+//     margin-right: 0;
+//   }
+
+//   &:nth-last-child(-n + 2) {
+//     margin-bottom: 0;
+//   }
+// }
+
+//   @media screen and (min-width: $desktop) {
+//     width: calc((100% - 90px) / 4);
+//     margin-bottom: 0px;
+
+//     &:not(:last-child) {
+//       margin-right: 30px;
+//     }
+//   }
+// }
+
+// .team-img {
+//   width: 100%;
+// }
+
+// .team-info {
+//   padding-top: 30px;
+//   padding-bottom: 30px;
+//   border-radius: 0 0 4px 4px;
+
+//   background-color: $main-bg-color;
+// }
+
+.socials {
+  display: flex;
+  justify-content: center;
+
+  & .social-item:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.team-list.socials {
+  @media screen and (min-width: $desktop) {
+    margin-right: 32px;
+    margin-left: 32px;
+  }
+}
+
+.social-link {
+  @extend %flex-center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  color: $main-icons-color;
+
+  transition: background-color 250ms $time-function, color 250ms $time-function;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-text-color;
+    color: $title-text-color;
+  }
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+
+  fill: currentColor;
+}

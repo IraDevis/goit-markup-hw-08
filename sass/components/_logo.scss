@@ -1,8 +1,12 @@
 .logo {
   font-family: "raleway", sans-serif;
-  @include font-style(700, 26px);
+  @include font-style(700, 24px);
 
   color: $accent-text-color;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 26px;
+  }
 }
 
 .logo-header {

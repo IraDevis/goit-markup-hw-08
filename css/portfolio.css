@@ -111,10 +111,16 @@ img {
 .logo {
   font-family: "raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: #2196f3;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+  }
 }
 
 .logo-header {
@@ -445,6 +451,34 @@ footer {
   background-color: #2f303a;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
 .footer-address {
   margin-bottom: 60px;
   font-weight: 400;
@@ -454,11 +488,35 @@ footer {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-address {
+    margin-left: 76px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .footer-address {
+    text-align: start;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-right: 70px;
+  }
+}
+
 .address {
   display: inline-block;
   margin-bottom: 8px;
   font-style: normal;
   color: #ffffff;
+}
+
+@media screen and (min-width: 1200px) {
+  .address {
+    display: block;
+    width: 231px;
+    margin-top: 0;
+    margin-bottom: 9px;
+  }
 }
 
 .footer-contacts {
@@ -467,6 +525,12 @@ footer {
 
 .footer-contacts .footer-item:first-child {
   margin-bottom: 8px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-contacts .footer-item:first-child {
+    margin-bottom: 9px;
+  }
 }
 
 .footer-contacts .link {
@@ -490,6 +554,26 @@ footer {
   color: #ffffff;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-container b {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-socials {
+    margin-right: 89px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-socials {
+    width: 206px;
+    margin-left: 0;
+    margin-right: 93px;
+  }
+}
+
 .footer-socials .get-us {
   margin-bottom: 17px;
 }
@@ -501,7 +585,16 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 63px;
+}
+
+.footer-socials .list .social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-socials .list {
+    margin-bottom: 60px;
+  }
 }
 
 .footer-socials .social-link {
@@ -541,11 +634,28 @@ footer {
           align-items: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    width: 570px;
+    height: 86px;
+  }
+}
+
 .subscribe-input {
   margin-bottom: 20px;
   width: 100%;
   max-width: 450px;
   height: 50px;
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -557,6 +667,14 @@ footer {
   outline: transparent;
   color: #ffffff;
   background-color: transparent;
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-input {
+    margin-bottom: 0;
+    margin-right: 12px;
+    width: 358px;
+  }
 }
 
 .subscribe-icon {

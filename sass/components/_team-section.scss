@@ -88,7 +88,9 @@
   & .social-item:not(:last-child) {
     margin-right: 10px;
   }
+}
 
+.team-list.socials {
   @media screen and (min-width: $desktop) {
     margin-right: 32px;
     margin-left: 32px;
