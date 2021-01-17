@@ -59,6 +59,11 @@
   top: 8px;
   right: 8px;
 
+  @media screen and (max-width: 479px) {
+    top: 101px;
+    right: 23px;
+  }
+
   width: 30px;
   height: 30px;
 
