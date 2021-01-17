@@ -1,4 +1,4 @@
-.modal, .close-button, .modal-form, .feature-icon-block, .social-link, .client-link {
+.footer-socials .social-link, .subscribe-button, .modal, .close-button, .modal-form, .feature-icon-block, .social-link, .client-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -144,6 +144,11 @@ img {
     padding-top: 24px;
     padding-bottom: 25px;
   }
+}
+
+.footer-container .logo {
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
 .nav-panel {
@@ -434,6 +439,132 @@ img {
   fill: #2196f3;
 }
 
+footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2f303a;
+}
+
+.footer-address {
+  margin-bottom: 60px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.address {
+  display: inline-block;
+  margin-bottom: 8px;
+  font-style: normal;
+  color: #ffffff;
+}
+
+.footer-contacts {
+  font-style: normal;
+}
+
+.footer-contacts .footer-item:first-child {
+  margin-bottom: 8px;
+}
+
+.footer-contacts .link {
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-contacts .link:hover, .footer-contacts .link:focus {
+  color: #2196f3;
+}
+
+.footer-container b {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer-socials .get-us {
+  margin-bottom: 17px;
+}
+
+.footer-socials .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 63px;
+}
+
+.footer-socials .social-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-socials .social-link:hover, .footer-socials .social-link:focus {
+  background-color: #2196f3;
+}
+
+.footer-socials .social-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.footer-form .subscribe {
+  margin-bottom: 17px;
+}
+
+.subscribe-input {
+  width: 100%;
+  max-width: 450px;
+  height: 50px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  outline: transparent;
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.subscribe-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+
+.subscribe-button {
+  width: 200px;
+  height: 50px;
+  outline: transparent;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: #2196f3;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
 .hero {
   height: 400px;
   max-width: 1600px;
@@ -523,8 +654,9 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-bottom: 40px;
+  padding-top: 40px;
   width: 100%;
-  height: 609px;
   border-radius: 4px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -585,12 +717,11 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-left: 40px;
-  margin-right: 40px;
+  width: 100%;
 }
 
 .callback {
-  margin-top: 40px;
+  display: block;
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
@@ -603,6 +734,7 @@ img {
 .modal-label {
   position: relative;
   margin-bottom: 10px;
+  width: 100%;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -611,8 +743,14 @@ img {
   color: #757575;
 }
 
+@media screen and (min-width: 1200px) {
+  .modal-label {
+    width: 448px;
+  }
+}
+
 .modal-input {
-  width: 370px;
+  width: 100%;
   height: 40px;
   margin-top: 4px;
   padding-left: 42px;
@@ -741,7 +879,6 @@ img {
 .send-button {
   width: 200px;
   height: 50px;
-  margin-bottom: 40px;
   outline: transparent;
   font-weight: 700;
   font-size: 16px;

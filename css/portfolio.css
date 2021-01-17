@@ -1,3 +1,15 @@
+.footer-socials .social-link, .subscribe-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 a {
   text-decoration: none;
   color: #757575;
@@ -132,6 +144,11 @@ img {
     padding-top: 24px;
     padding-bottom: 25px;
   }
+}
+
+.footer-container .logo {
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
 .nav-panel {
@@ -420,6 +437,132 @@ img {
 
 .contact-icon:hover, .contact-icon:focus {
   fill: #2196f3;
+}
+
+footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2f303a;
+}
+
+.footer-address {
+  margin-bottom: 60px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.address {
+  display: inline-block;
+  margin-bottom: 8px;
+  font-style: normal;
+  color: #ffffff;
+}
+
+.footer-contacts {
+  font-style: normal;
+}
+
+.footer-contacts .footer-item:first-child {
+  margin-bottom: 8px;
+}
+
+.footer-contacts .link {
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-contacts .link:hover, .footer-contacts .link:focus {
+  color: #2196f3;
+}
+
+.footer-container b {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer-socials .get-us {
+  margin-bottom: 17px;
+}
+
+.footer-socials .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 63px;
+}
+
+.footer-socials .social-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-socials .social-link:hover, .footer-socials .social-link:focus {
+  background-color: #2196f3;
+}
+
+.footer-socials .social-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.footer-form .subscribe {
+  margin-bottom: 17px;
+}
+
+.subscribe-input {
+  width: 100%;
+  max-width: 450px;
+  height: 50px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  outline: transparent;
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.subscribe-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+
+.subscribe-button {
+  width: 200px;
+  height: 50px;
+  outline: transparent;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: #2196f3;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .portfolio-section {

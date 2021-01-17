@@ -1,0 +1,155 @@
+// footer {
+//   display: flex;
+//   align-items: center;
+
+//   padding-top: 60px;
+//   padding-bottom: 60px;
+
+//   background-color: $accent-bg-color;
+// }
+
+// .footer-container {
+//   display: flex;
+//   align-items: baseline;
+
+//   padding-left: 15px;
+//   padding-right: 15px;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+
+// .footer-container .logo {
+//   display: inline-block;
+//   margin-bottom: 20px;
+// }
+
+// .footer-address {
+//   width: 231px;
+//   margin-right: 70px;
+// }
+
+// .address {
+//   display: block;
+//   width: 231px;
+//   margin-top: 0;
+//   margin-bottom: 9px;
+
+//   @include font-style($height: 1.71);
+//   font-style: normal;
+
+//   color: $title-text-color;
+// }
+
+// .footer-contacts {
+//   padding-left: 0;
+
+//   @include font-style($height: 1.71);
+//   font-style: normal;
+
+//   & .footer-item:first-child {
+//     margin-bottom: 9px;
+//   }
+// }
+
+// .footer-contacts .link {
+//   transition: color 250ms $time-function;
+
+//   &:hover,
+//   &:focus {
+//     color: $accent-text-color;
+//   }
+// }
+
+// .footer-container b {
+//   display: block;
+
+//   margin-bottom: 20px;
+
+//   @include font-style(700);
+//   font-style: normal;
+//   text-align: left;
+//   text-transform: uppercase;
+
+//   color: $title-text-color;
+// }
+
+// .footer-socials {
+//   width: 206px;
+//   margin-left: 0;
+//   margin-right: 93px;
+// }
+
+// .footer-socials .socials {
+//   display: flex;
+//   justify-content: space-between;
+//   margin-left: 0px;
+// }
+
+// .footer-socials .social-link {
+//   @extend %flex-center;
+
+//   width: 44px;
+//   height: 44px;
+//   border-radius: 50%;
+
+//   background-color: rgba(255, 255, 255, 0.1);
+//   color: $title-text-color;
+
+//   transition: background-color 250ms $time-function;
+
+//   &:hover,
+//   &:focus {
+//     background-color: $accent-text-color;
+//   }
+// }
+
+// .footer-socials .social-icon {
+//   width: 20px;
+//   height: 20px;
+
+//   fill: currentColor;
+// }
+
+// .form {
+//   display: flex;
+//   width: 570px;
+//   height: 86px;
+// }
+
+// .subscribe-input {
+//   width: 358px;
+//   height: 50px;
+//   margin-right: 12px;
+//   padding-left: 16px;
+//   padding-top: 15px;
+//   padding-bottom: 15px;
+
+//   @include font-style($size: 16px, $height: 1.25);
+
+//   border: 1px solid rgba(255, 255, 255, 0.3);
+//   box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
+//   border-radius: 4px;
+//   outline: transparent;
+
+//   color: $title-text-color;
+//   background-color: transparent;
+// }
+
+// .subscribe-icon {
+//   width: 24px;
+//   height: 24px;
+//   margin-left: 10px;
+// }
+
+// .subscribe-button {
+//   @extend %flex-center;
+//   width: 200px;
+//   height: 50px;
+//   outline: transparent;
+
+//   @include font-style(700, 16px, 1.88, 0.06em);
+
+//   color: $title-text-color;
+//   background-color: $accent-text-color;
+//   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+// }

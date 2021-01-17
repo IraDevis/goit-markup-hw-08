@@ -23,8 +23,11 @@
 .modal {
   @extend %flex-center;
   flex-direction: column;
+  padding-bottom: 40px;
+  padding-top: 40px;
+
   width: 100%;
-  height: 609px;
+
   border-radius: 4px;
 
   background-color: $main-bg-color;
@@ -53,15 +56,8 @@
 .close-button {
   position: absolute;
   @extend %flex-center;
-  //   top: 101px;
-  //   right: 23px;
   top: 8px;
   right: 8px;
-
-  //   @media screen and (min-width: $desktop) {
-  //     top: 8px;
-  //     right: 8px;
-  //   }
 
   width: 30px;
   height: 30px;
@@ -89,12 +85,11 @@
 .modal-form {
   @extend %flex-center;
   flex-direction: column;
-  margin-left: 40px;
-  margin-right: 40px;
+  width: 100%;
 }
 
 .callback {
-  margin-top: 40px;
+  display: block;
   margin-bottom: 12px;
 
   @include font-style(700, 20px, 1.15);
@@ -106,16 +101,20 @@
 .modal-label {
   position: relative;
   margin-bottom: 10px;
+  width: 100%;
 
   @include font-style($size: 12px, $spacing: 0.01em);
   text-align: left;
 
   color: $main-text-color;
+
+  @media screen and (min-width: $desktop) {
+    width: 448px;
+  }
 }
 
 .modal-input {
-  width: 370px;
-
+  width: 100%;
   @media screen and (min-width: $desktop) {
     width: 448px;
   }
@@ -205,7 +204,6 @@
 .send-button {
   width: 200px;
   height: 50px;
-  margin-bottom: 40px;
   outline: transparent;
 
   @include font-style(700, 16px, 1.88, 0.06em);
