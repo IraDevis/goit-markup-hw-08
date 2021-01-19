@@ -1,8 +1,8 @@
 .hero {
   height: 400px;
   max-width: 1600px;
-  padding-top: 200px;
-  padding-bottom: 280px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin-right: auto;
   margin-left: auto;
 
@@ -41,6 +41,8 @@
 
   @media screen and (min-width: $desktop) {
     height: 600px;
+    padding-top: 200px;
+    padding-bottom: 280px;
 
     @media screen and (min-device-pixel-ratio: 1), screen and (min-resolution: 96dpi), screen and (min-resolution: 1dppx) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/hero/Img.jpg);

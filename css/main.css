@@ -700,8 +700,8 @@ footer {
 .hero {
   height: 400px;
   max-width: 1600px;
-  padding-top: 200px;
-  padding-bottom: 280px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
@@ -756,6 +756,8 @@ footer {
 @media screen and (min-width: 1200px) {
   .hero {
     height: 600px;
+    padding-top: 200px;
+    padding-bottom: 280px;
   }
 }
 
@@ -1303,8 +1305,8 @@ footer {
 
 @media screen and (min-width: 1200px) {
   .team-item {
-    width: calc((100% - 90px) / 4);
     margin-bottom: 0px;
+    width: calc((100% - 90px) / 4);
   }
   .team-item:not(:last-child) {
     margin-right: 30px;
